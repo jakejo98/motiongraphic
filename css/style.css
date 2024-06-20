@@ -1,0 +1,24 @@
+/* 전역 */
+.container{width:100%}
+/* Header */
+header{position:fixed;top:0;left:0;z-index:10;width:100%;background-color:#333;}
+.header h1{padding:10px 20px;font-weight:400;font-size:24px;line-height:30px;color:#fff}
+/* Contents */
+.contents-container{display:flex;padding-top:50px;}
+/* Nav */
+.side-bar{width:200px;padding:20px;border-right:1px solid #ddd;box-sizing:border-box}
+.side-bar h2{font-weight:400;font-size:20px;color:#12b886}
+.side-bar .side-list{margin-top:10px}
+.side-bar .nav-link{display:block;font-weight:400;line-height:24px;color:#999}
+.side-bar .nav-link:hover{color:#333;transition:0.3s all;}
+/* Main */
+.contents-main{flex:1 1 100%;position:relative;max-width:1000px}
+.lottie-article{padding:50px 0 0 20px}
+.lottie-title{margin-bottom:30px;font-weight:700;font-size:32px;line-height:40px;text-transform:uppercase}
+.lottie-card{border:1px solid #ddd;}
+.lottie-card + .lottie-card{margin-top:50px}
+.lottie-card-header{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:1px solid #ddd;background-color:#f6f6f6}
+.lottie-card-header-tit{font-weight:700}
+.lottie-card-header-volume{font-weight:400;font-size:12px;color:#666}
+.lottie-card-body{display:flex;padding:20px 16px}
+.lottie{width:100%;}
