@@ -4,13 +4,33 @@ document.addEventListener('DOMContentLoaded', () => {
       path: './json/0903_promo_camping.json',
       loop: true,
       playOnceAndStop: false,
-      containerId: 'lottie1',
+      containerId: 'lottie-text1',
     },
     {
       path: './json/1111_promo_christ.json',
       loop: true,
       playOnceAndStop: false,
-      containerId: 'lottie2',
+      containerId: 'lottie-text2',
+    },
+    {
+      path: './json/0529_promo_diet.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-object1',
+      playSegmentsOnce: [0, 8],
+      loopSegments: [9, 21],
+      firstLoopCompleted: false,
+      delayTime: 2000,
+    },
+    {
+      path: './json/0612_promo_pulmuone.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-object2',
+      playSegmentsOnce: [0, 27],
+      loopSegments: [28, 34],
+      firstLoopCompleted: false,
+      delayTime: 2000,
     },
   ];
 
@@ -20,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderer: 'svg',
       loop: config.loop,
       autoplay: true,
-      path: config.path
+      path: config.path,
     });
 
     animation.addEventListener('DOMLoaded', () => {
@@ -32,16 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         animation.playSegments(config.playSegmentsOnce, true);
         animation.addEventListener('complete', () => {
-          animation.loop = true;
-          animation.playSegments(config.loopSegments, true);
+          if (!config.firstLoopCompleted) {
+            config.firstLoopCompleted = true;
+            animation.playSegments(config.loopSegments, true);
+          } else {
+            setTimeout(() => {
+              animation.playSegments(config.loopSegments, true);
+            }, config.delayTime);
+          }
         });
       }
     });
   });
 });
-// path: './1111_promo_christ.json', // 파일 경로
-// loop: false, // 반ㅗㄱ 여뷰
-// playSegmentsOnce: [0, 20], // 한 번만 실행할 프레임 범위
-// loopSegments: [0, 80], // 이후에 반복할 프레임 범위
-// playOnceAndStop: true // 한 번만 실행여부
-// containerId: 'lottie1' // 아이디 지정
