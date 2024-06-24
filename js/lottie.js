@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       playSegmentsOnce: [0, 8],
       loopSegments: [9, 21],
       firstLoopCompleted: false,
-      delayTime: 2000,
+      delayTime: 3000,
     },
     {
       path: './json/0612_promo_pulmuone.json',
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       playSegmentsOnce: [0, 27],
       loopSegments: [28, 34],
       firstLoopCompleted: false,
-      delayTime: 2000,
+      delayTime: 3000,
     },
   ];
 

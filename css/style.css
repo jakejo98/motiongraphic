@@ -6,7 +6,7 @@ header{position:fixed;top:0;left:0;z-index:10;width:100%;background-color:#333;}
 /* Contents */
 .contents-container{display:flex;padding:50px 0}
 /* Nav */
-.side-bar{position:fixed;top:50px;left:0;padding:20px 12px;min-width:150px;height:calc(100vh - 50px);border-right:1px solid #ddd}
+.side-bar{position:fixed;top:50px;left:0;z-index:10;padding:20px 12px;min-width:150px;height:calc(100vh - 50px);border-right:1px solid #ddd}
 .side-bar h2{padding-bottom:20px;font-weight:400;font-size:18px;color:#12b886}
 .side-bar .nav-link{display:block;font-weight:400;line-height:24px;color:#666}
 .side-bar .nav-link:hover{color:#333;transition:0.3s all;}
