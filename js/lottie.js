@@ -51,6 +51,16 @@ document.addEventListener('DOMContentLoaded', () => {
       firstLoopCompleted: false,
       delayTime: 3000,
     },
+    {
+      path: './json/summer.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-background1',
+      playSegmentsOnce: [0, 8],
+      loopSegments: [0, 8],
+      firstLoopCompleted: false,
+      delayTime: 2000,
+    },
   ];
 
   animationsConfig.forEach(config => {
