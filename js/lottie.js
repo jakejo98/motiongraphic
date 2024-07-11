@@ -4,12 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const animationsConfig = [
     {
-      path: './json/0903_promo_camping.json',
-      loop: false,
-      playOnceAndStop: true,
-      containerId: 'lottie-text1',
-    },
-    {
       path: './json/1111_promo_christ.json',
       loop: false,
       playOnceAndStop: true,
