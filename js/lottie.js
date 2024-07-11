@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const lottieCardList = document.querySelectorAll('.lottie-card-link');
+  const animations = [];
+
   const animationsConfig = [
     {
       path: './json/0903_promo_camping.json',
-      loop: true,
-      playOnceAndStop: false,
+      loop: false,
+      playOnceAndStop: true,
       containerId: 'lottie-text1',
     },
     {
       path: './json/1111_promo_christ.json',
-      loop: true,
-      playOnceAndStop: false,
+      loop: false,
+      playOnceAndStop: true,
       containerId: 'lottie-text2',
     },
     {
@@ -26,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: false,
       playOnceAndStop: false,
       containerId: 'lottie-object1',
-      playSegmentsOnce: [0, 8],
+      playSegmentsOnce: [0, 21],
       loopSegments: [9, 21],
       firstLoopCompleted: false,
       delayTime: 2000,
@@ -36,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: false,
       playOnceAndStop: false,
       containerId: 'lottie-object2',
-      playSegmentsOnce: [0, 27],
+      playSegmentsOnce: [0, 34],
       loopSegments: [28, 34],
       firstLoopCompleted: false,
       delayTime: 2000,
@@ -46,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: false,
       playOnceAndStop: false,
       containerId: 'lottie-object3',
-      playSegmentsOnce: [0, 14],
+      playSegmentsOnce: [0, 19],
       loopSegments: [15, 19],
       firstLoopCompleted: false,
       delayTime: 3000,
@@ -59,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       playSegmentsOnce: [0, 8],
       loopSegments: [0, 8],
       firstLoopCompleted: false,
-      delayTime: 2000,
+      delayTime: 1500,
     },
   ];
 
@@ -72,25 +75,43 @@ document.addEventListener('DOMContentLoaded', () => {
       path: config.path,
     });
 
-    animation.addEventListener('DOMLoaded', () => {
-      if (config.playOnceAndStop) {
-        animation.playSegments(config.playSegmentsOnce, true);
-        animation.addEventListener('complete', () => {
-          animation.goToAndStop(config.playSegmentsOnce[1], true);
-        });
-      } else {
-        animation.playSegments(config.playSegmentsOnce, true);
-        animation.addEventListener('complete', () => {
-          if (!config.firstLoopCompleted) {
-            config.firstLoopCompleted = true;
-            animation.playSegments(config.loopSegments, true);
-          } else {
-            setTimeout(() => {
-              animation.playSegments(config.loopSegments, true);
-            }, config.delayTime);
-          }
-        });
+    animation.config = config;  // 애니메이션 객체에 설정 저장
+    animations.push(animation);
+  });
+
+  const playAnimationWithDelay = async (anim, config) => {
+    const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
+
+    const onComplete = async () => {
+      await delay(config.delayTime);
+      if (config.loopSegments) {
+        anim.playSegments(config.loopSegments, true);
+      } else if (config.playSegmentsOnce) {
+        anim.playSegments(config.playSegmentsOnce, true);
       }
+    };
+
+    anim.addEventListener('complete', onComplete);
+
+    if (config.loopSegments) {
+      anim.playSegments(config.playSegmentsOnce, true);
+    } else if (config.playSegmentsOnce) {
+      anim.playSegments(config.playSegmentsOnce, true);
+    } else {
+      anim.play();
+    }
+  };
+  
+  lottieCardList.forEach((element, index) => {
+    element.addEventListener('click', () => {
+      const anim = animations[index];
+      const config = anim.config;
+
+      anim.stop();
+      anim.goToAndStop(0, true);
+
+      playAnimationWithDelay(anim, config);
     });
   });
+  
 });
