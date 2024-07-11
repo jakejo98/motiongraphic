@@ -20,8 +20,7 @@ header{position:fixed;top:0;left:0;z-index:10;width:100%;background-color:#333;}
 .lottie-card-header{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:1px solid #ddd;background-color:#f6f6f6}
 .lottie-card-header-tit{font-weight:700}
 .lottie-card-body{display:flex;padding:20px 16px}
-.lottie-card-body img{width: 100%}
-.lottie{max-width:100%;margin:0 auto;}
+.lottie-card-body img{margin: 0 auto;max-width: 100%;}
 /* Popup */
 body.is-fixed{overflow:hidden;}
 .ly-pop-wrap{position:fixed;top:0;left:0;z-index:1000;width:100%;height:100%;display:none;}
