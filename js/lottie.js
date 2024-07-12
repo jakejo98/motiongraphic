@@ -78,6 +78,16 @@ document.addEventListener('DOMContentLoaded', () => {
       firstLoopCompleted: false,
       delayTime: 1500,
     },
+    {
+      path: './json/gangsale.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix1',
+      playSegmentsOnce: [0, 67],
+      loopSegments: [0, 67],
+      firstLoopCompleted: false,
+      delayTime: 1000,
+    },
   ];
 
   animationsConfig.forEach(config => {
