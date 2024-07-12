@@ -1,4 +1,5 @@
 /* 전역 */
+body.is-fixed{overflow: hidden}
 .container{width:100%}
 button{padding:0;margin:0;border:0;background-color:transparent;cursor:pointer}
 /* Header */

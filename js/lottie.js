@@ -76,7 +76,17 @@ document.addEventListener('DOMContentLoaded', () => {
       playSegmentsOnce: [0, 8],
       loopSegments: [0, 8],
       firstLoopCompleted: false,
-      delayTime: 1500,
+      delayTime: 3000,
+    },
+    {
+      path: './json/summer02.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-background2',
+      playSegmentsOnce: [0, 80],
+      loopSegments: [0, 80],
+      firstLoopCompleted: false,
+      delayTime: 3000,
     },
     {
       path: './json/gangsale.json',
@@ -86,7 +96,17 @@ document.addEventListener('DOMContentLoaded', () => {
       playSegmentsOnce: [0, 67],
       loopSegments: [0, 67],
       firstLoopCompleted: false,
-      delayTime: 1000,
+      delayTime: 3000,
+    },
+    {
+      path: './json/0903_promo_camping.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix2',
+      playSegmentsOnce: [0, 23],
+      loopSegments: [0, 23],
+      firstLoopCompleted: false,
+      delayTime: 3000,
     },
   ];
 
