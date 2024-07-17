@@ -128,6 +128,16 @@ document.addEventListener('DOMContentLoaded', () => {
       firstLoopCompleted: false,
       delayTime: 3000,
     },
+    {
+      path: './json/nt_customer_monitering.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix3',
+      playSegmentsOnce: [0, 66],
+      loopSegments: [0, 66],
+      firstLoopCompleted: false,
+      delayTime: 3000,
+    },
   ];
 
   animationsConfig.forEach(config => {
