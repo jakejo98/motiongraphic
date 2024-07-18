@@ -95,8 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: false,
       playOnceAndStop: false,
       containerId: 'lottie-object9',
-      playSegmentsOnce: [0, 120],
-      loopSegments: [24, 120],
+      playSegmentsOnce: [0, 72],
+      loopSegments: [24, 72],
       delayTime: 0,
     },
     {
