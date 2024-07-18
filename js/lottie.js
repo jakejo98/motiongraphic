@@ -84,11 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       path: './json/0903_promo_camping.json',
       loop: false,
-      playOnceAndStop: false,
+      playOnceAndStop: true,
       containerId: 'lottie-object8',
-      playSegmentsOnce: [0, 23],
-      loopSegments: [0, 23],
-      delayTime: 3000,
     },
     {
       path: './json/0731_promo_frosted-fruits.json',
