@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-text3',
       playSegmentsOnce: [0, 9],
       loopSegments: [0, 9],
-      delayTime: 2000,
+      delayTime: 3000,
     },
     {
       path: './json/0529_promo_diet.json',
@@ -25,8 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-object1',
       playSegmentsOnce: [0, 21],
       loopSegments: [9, 21],
-      firstLoopCompleted: false,
-      delayTime: 2000,
+      delayTime: 3000,
     },
     {
       path: './json/ballon.json',
@@ -35,8 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-object2',
       playSegmentsOnce: [0, 59],
       loopSegments: [0, 59],
-      firstLoopCompleted: false,
-      delayTime: 1000,
+      delayTime: 3000,
     },
     {
       path: './json/0612_promo_pulmuone.json',
@@ -45,8 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-object3',
       playSegmentsOnce: [0, 34],
       loopSegments: [28, 34],
-      firstLoopCompleted: false,
-      delayTime: 2000,
+      delayTime: 3000,
     },
     {
       path: './json/showty.json',
@@ -55,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-object4',
       playSegmentsOnce: [0, 19],
       loopSegments: [15, 19],
-      firstLoopCompleted: false,
       delayTime: 3000,
     },
     {
@@ -65,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-object5',
       playSegmentsOnce: [0, 36],
       loopSegments: [6, 36],
-      firstLoopCompleted: false,
       delayTime: 2000,
     },
     {
@@ -75,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-object6',
       playSegmentsOnce: [0, 36],
       loopSegments: [0, 36],
-      firstLoopCompleted: false,
       delayTime: 3000,
     },
     {
@@ -85,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-object7',
       playSegmentsOnce: [0, 28],
       loopSegments: [0, 28],
-      firstLoopCompleted: false,
       delayTime: 3000,
     },
     {
@@ -95,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-object8',
       playSegmentsOnce: [0, 23],
       loopSegments: [0, 23],
-      firstLoopCompleted: false,
       delayTime: 3000,
     },
     {
@@ -104,9 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
       playOnceAndStop: false,
       containerId: 'lottie-object9',
       playSegmentsOnce: [0, 120],
-      loopSegments: [0, 120],
-      firstLoopCompleted: false,
-      delayTime: 3000,
+      loopSegments: [24, 120],
+      delayTime: 0,
     },
     {
       path: './json/summer.json',
@@ -115,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-background1',
       playSegmentsOnce: [0, 8],
       loopSegments: [0, 8],
-      firstLoopCompleted: false,
       delayTime: 3000,
     },
     {
@@ -125,7 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-background2',
       playSegmentsOnce: [0, 80],
       loopSegments: [0, 80],
-      firstLoopCompleted: false,
       delayTime: 3000,
     },
     {
@@ -135,7 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-mix1',
       playSegmentsOnce: [0, 67],
       loopSegments: [0, 67],
-      firstLoopCompleted: false,
       delayTime: 3000,
     },
     {
@@ -145,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-mix3',
       playSegmentsOnce: [0, 66],
       loopSegments: [0, 66],
-      firstLoopCompleted: false,
       delayTime: 3000,
     },
   ];
