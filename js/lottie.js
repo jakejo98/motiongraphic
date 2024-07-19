@@ -141,6 +141,15 @@ document.addEventListener('DOMContentLoaded', () => {
       loopSegments: [0, 66],
       delayTime: 3000,
     },
+    {
+      path: './json/nt_weekend_coupon.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix3',
+      playSegmentsOnce: [0, 110],
+      loopSegments: [62, 110],
+      delayTime: 0,
+    },
   ];
 
   animationsConfig.forEach(config => {
