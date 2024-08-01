@@ -106,6 +106,15 @@ document.addEventListener('DOMContentLoaded', () => {
       delayTime: 0,
     },
     {
+      path: './json/1218_promo_winterfood.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-object11',
+      playSegmentsOnce: [0, 47],
+      loopSegments: [0, 47],
+      delayTime: 0,
+    },
+    {
       path: './json/summer.json',
       loop: false,
       playOnceAndStop: false,
@@ -148,6 +157,15 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-mix3',
       playSegmentsOnce: [0, 110],
       loopSegments: [62, 110],
+      delayTime: 0,
+    },
+    {
+      path: './json/0206_promo_sul.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix4',
+      playSegmentsOnce: [0, 56],
+      loopSegments: [42, 56],
       delayTime: 0,
     },
   ];
