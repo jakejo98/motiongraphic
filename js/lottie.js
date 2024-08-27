@@ -133,6 +133,12 @@ document.addEventListener('DOMContentLoaded', () => {
       delayTime: 0,
     },
     {
+      path: './json/0308_promo_agricultural.json',
+      loop: false,
+      playOnceAndStop: true,
+      containerId: 'lottie-object13',
+    },
+    {
       path: './json/summer.json',
       loop: false,
       playOnceAndStop: false,
