@@ -194,9 +194,9 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: false,
       playOnceAndStop: false,
       containerId: 'lottie-mix8',
-      playSegmentsOnce: [0, 48],
-      loopSegments: [0, 48],
-      delayTime: 2000,
+      playSegmentsOnce: [0, 64],
+      loopSegments: [64, 112],
+      delayTime: 0,
     },
     {
       path: './json/0307_promo_WhiteDay.json',
