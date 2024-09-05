@@ -225,6 +225,15 @@ document.addEventListener('DOMContentLoaded', () => {
       loopSegments: [66, 72],
       delayTime: 1500,
     },
+    {
+      path: './json/0926_promo_fruit.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix11',
+      playSegmentsOnce: [0, 12],
+      loopSegments: [12, 36],
+      delayTime: 3000,
+    },
   ];
 
   animationsConfig.forEach(config => {
