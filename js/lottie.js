@@ -136,6 +136,15 @@ document.addEventListener('DOMContentLoaded', () => {
       delayTime: 0,
     },
     {
+      path: './json/0926_promo_fruit.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-background3',
+      playSegmentsOnce: [0, 24],
+      loopSegments: [0, 24],
+      delayTime: 2000,
+    },
+    {
       path: './json/gangsale.json',
       loop: false,
       playOnceAndStop: false,
@@ -224,15 +233,6 @@ document.addEventListener('DOMContentLoaded', () => {
       playSegmentsOnce: [0, 72],
       loopSegments: [66, 72],
       delayTime: 1500,
-    },
-    {
-      path: './json/0926_promo_fruit.json',
-      loop: false,
-      playOnceAndStop: false,
-      containerId: 'lottie-mix11',
-      playSegmentsOnce: [0, 12],
-      loopSegments: [12, 36],
-      delayTime: 3000,
     },
   ];
 
