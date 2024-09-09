@@ -145,6 +145,15 @@ document.addEventListener('DOMContentLoaded', () => {
       delayTime: 2000,
     },
     {
+      path: './json/spring_sale.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-background4',
+      playSegmentsOnce: [0, 240],
+      loopSegments: [0, 240],
+      delayTime: 0,
+    },
+    {
       path: './json/gangsale.json',
       loop: false,
       playOnceAndStop: false,
