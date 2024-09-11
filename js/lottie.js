@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: false,
       playOnceAndStop: false,
       containerId: 'lottie-mix8',
-      playSegmentsOnce: [0, 12],
+      playSegmentsOnce: [0, 60],
       loopSegments: [12, 60],
       delayTime: 0,
     },
@@ -260,6 +260,24 @@ document.addEventListener('DOMContentLoaded', () => {
       playSegmentsOnce: [0, 92],
       // loopSegments: [50, 63],
       delayTime: 5000,
+    },
+    {
+      path: './json/0311_promo_ssd.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix13',
+      playSegmentsOnce: [0, 48],
+      loopSegments: [42, 48],
+      delayTime: 2000,
+    },
+    {
+      path: './json/are_you_having_fun.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix14',
+      playSegmentsOnce: [0, 48],
+      loopSegments: [36, 48],
+      delayTime: 3000,
     },
   ];
 
