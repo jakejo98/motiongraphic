@@ -279,6 +279,15 @@ document.addEventListener('DOMContentLoaded', () => {
       loopSegments: [12, 36],
       delayTime: 2000,
     },
+    {
+      path: './json/today_card_fortune.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix16',
+      playSegmentsOnce: [0, 44],
+      loopSegments: [36, 44],
+      delayTime: 2000,
+    },
   ];
 
   animationsConfig.forEach(config => {
