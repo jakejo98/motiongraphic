@@ -127,6 +127,15 @@ document.addEventListener('DOMContentLoaded', () => {
       delayTime: 2000,
     },
     {
+      path: './json/0221_promo_socks.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-object13',
+      playSegmentsOnce: [0, 36],
+      loopSegments: [0, 36],
+      delayTime: 2000,
+    },
+    {
       path: './json/summer.json',
       loop: false,
       playOnceAndStop: false,
@@ -248,8 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: false,
       playOnceAndStop: false,
       containerId: 'lottie-mix11',
-      playSegmentsOnce: [0, 63],
-      loopSegments: [50, 63],
+      playSegmentsOnce: [0, 145],
+      loopSegments: [49, 145],
       delayTime: 0,
     },
     {
@@ -257,9 +266,9 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: false,
       playOnceAndStop: false,
       containerId: 'lottie-mix12',
-      playSegmentsOnce: [0, 92],
-      // loopSegments: [50, 63],
-      delayTime: 5000,
+      playSegmentsOnce: [0, 116],
+      loopSegments: [92, 116],
+      delayTime: 2000,
     },
     {
       path: './json/0311_promo_ssd.json',
@@ -295,6 +304,15 @@ document.addEventListener('DOMContentLoaded', () => {
       containerId: 'lottie-mix16',
       playSegmentsOnce: [0, 44],
       loopSegments: [36, 44],
+      delayTime: 2000,
+    },
+    {
+      path: './json/0729_promo_egg.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix17',
+      playSegmentsOnce: [0, 64],
+      loopSegments: [50, 64],
       delayTime: 2000,
     },
   ];
@@ -342,6 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       anim.stop();
       anim.goToAndStop(0, true);
+      console.log(element);
 
       playAnimationWithDelay(anim, config);
     });
