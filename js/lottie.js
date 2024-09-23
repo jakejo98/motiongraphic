@@ -136,6 +136,15 @@ document.addEventListener('DOMContentLoaded', () => {
       delayTime: 2000,
     },
     {
+      path: './json/0404_promo_health.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-object14',
+      playSegmentsOnce: [0, 48],
+      loopSegments: [0, 48],
+      delayTime: 1500,
+    },
+    {
       path: './json/summer.json',
       loop: false,
       playOnceAndStop: false,
