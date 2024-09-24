@@ -324,6 +324,15 @@ document.addEventListener('DOMContentLoaded', () => {
       loopSegments: [50, 64],
       delayTime: 2000,
     },
+    {
+      path: './json/kiss_day_event.json',
+      loop: false,
+      playOnceAndStop: false,
+      containerId: 'lottie-mix18',
+      playSegmentsOnce: [0, 40],
+      loopSegments: [16, 40],
+      delayTime: 2000,
+    },
   ];
 
   animationsConfig.forEach(config => {
